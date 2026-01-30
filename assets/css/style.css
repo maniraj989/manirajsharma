@@ -101,6 +101,46 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
+  /* Prevent shapes from causing horizontal scroll */
+}
+
+.hero-bg-shape {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+  /* Subtle effect */
+}
+
+.hero-bg-shape img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+.shape-1 {
+  top: -100px;
+  left: -100px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape-2 {
+  bottom: -50px;
+  right: -50px;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .hero-content {
