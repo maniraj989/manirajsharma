@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maniraj Sharma - Creative Web Designer</title>
+    <meta name="description"
+        content="Portfolio of Maniraj Sharma, a Creative Web Designer passionate about building innovative digital experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for Icons (using CDN for simplicity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Overlay -->
+    <div class="overlay" data-nav-toggler data-overlay></div>
+
+    <header class="header" data-header>
+        <div class="logo">Maniraj.</div>
+        <nav class="nav" data-navbar>
+            <div class="nav-top">
+                <div class="logo">Maniraj.</div>
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="#home" class="nav-link active" data-nav-link>Home</a></li>
+                <li><a href="#service" class="nav-link" data-nav-link>Services</a></li>
+                <li><a href="#projects" class="nav-link" data-nav-link>Projects</a></li>
+                <li><a href="#about" class="nav-link" data-nav-link>About</a></li>
+                <li><a href="#contacts" class="btn btn-secondary nav-contact-btn mobile-only" data-nav-link>Contact
+                        Me</a></li>
+            </ul>
+        </nav>
+        <a href="#contacts" class="btn btn-secondary nav-contact-btn desktop-only">Contact Me</a>
+
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main class="hero-section" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Maniraj Sharma</h1>
+            <h2 class="hero-subtitle">Creative Web Designer</h2>
+            <p class="hero-description">
+                I'm Maniraj Sharma, a creative web designer passionate about building innovative digital experiences.
+                With a focus on clean design, intuitive user experiences, and the latest web technologies, I help brands
+                and businesses transform their online presence. Whether you're looking to revamp your current site or
+                build something from the ground up, I'm here to bring your ideas to life. Let's create something amazing
+                together!
+            </p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/message/5W2EK4W4PNEAB1" class="btn btn-primary" target="_blank">Hire Me</a>
+                <a href="#contacts" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1FaPdhrWMy/" class="social-icon"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/maniraj-sharmma-221b69355/" class="social-icon"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/maniraj.123?igsh=MW51c2V1dzR3cHh3bw==" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@sizzlingtechbytes4683" class="social-icon"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@maniraj.123" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="assets/images/1000026461-modified.jpg" alt="Maniraj Sharma - Web Designer" class="hero-image"
+                data-tilt>
+        </div>
+
+    </main>
+
+    <section class="service text-center" aria-label="my services" id="service">
+        <h2 class="section-title">Services</h2>
+        <div class="container">
+            <ul class="service-list">
+                <li class="service-item">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/service-icon-1.svg" width="80" height="80" loading="lazy"
+                                alt="service icon">
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Web <br> Development</a>
+                        </h3>
+                    </div>
+                </li>
+
+                <li class="service-item">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/service-icon-2.svg" width="80" height="80" loading="lazy"
+                                alt="service icon">
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Digital <br>
+                                Marketing</a>
+                        </h3>
+                    </div>
+                </li>
+
+                <li class="service-item">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/service-icon-3.svg" width="80" height="80" loading="lazy"
+                                alt="service icon">
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Graphics<br>
+                                Design</a>
+                        </h3>
+                    </div>
+                </li>
+
+                <li class="service-item">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="./assets/images/service-icon-4.svg" width="80" height="80" loading="lazy"
+                                alt="service icon">
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Mobile<br>
+                                Application</a>
+                        </h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <ul class="about-tab-list">
+                <li><button class="tab-btn active" data-tab-btn="about-me">About Me</button></li>
+                <li><button class="tab-btn" data-tab-btn="skillset">Skillset</button></li>
+                <li><button class="tab-btn" data-tab-btn="interview">Interview</button></li>
+                <li><button class="tab-btn" data-tab-btn="awards">Awards</button></li>
+            </ul>
+
+            <!-- About Me Content -->
+            <div class="about-content active" data-tab-content="about-me">
+                <figure class="about-banner">
+                    <img src="assets/images/desk-setup.png" alt="Workspace Setup" class="about-img">
+                </figure>
+                <div class="about-text">
+                    <h2 class="about-title">A very small stage in a vast cosmic.</h2>
+                    <p class="about-description">
+                        A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star
+                        stuff
+                        harvesting star light the carbon in our apple pies realm of the galaxies
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Name</span>
+                            <span class="info-value">Maniraj Sharma</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Phone Number</span>
+                            <span class="info-value">+918925108274</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email Address</span>
+                            <span class="info-value">sharmabro275@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Social Network</span>
+                            <span class="info-value">
+                                <a href="#" class="social-link">Fb.</a>
+                                <a href="#" class="social-link">Be.</a>
+                                <a href="#" class="social-link">Ln.</a>
+                                <a href="#" class="social-link">Dr.</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skillset Content -->
+            <div class="about-content" data-tab-content="skillset">
+                <div class="about-text">
+                    <h2 class="about-title">We help to create visual strategies.</h2>
+                    <p class="about-description">
+                        A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star
+                        stuff harvesting star light
+                    </p>
+
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-label">
+                                <span>Website Development</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-label">
+                                <span>Design UI & UX</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="about-banner">
+                    <img src="assets/images/laptop-typing.png" alt="Working on Laptop" class="about-img">
+                </figure>
+            </div>
+
+            <div class="about-content" data-tab-content="interview">
+                <div class="about-text">
+                    <h2 class="about-title">Interviews & Media</h2>
+                    <p class="about-description">Featured in TechDaily and DesignWeekly for innovative web approaches.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Awards Content -->
+            <div class="about-content" data-tab-content="awards">
+                <div class="about-text">
+                    <h2 class="about-title">We’re a team of creatives who are excited about unique ideas and help
+                        IT-tech companies to make identity by crafting UI/UX.</h2>
+                </div>
+                <div class="awards-grid">
+                    <img src="assets/images/awward-1.jpg" alt="Certificate of Appreciation" class="certificate-img">
+                    <img src="assets/images/awward-2.jpg" alt="Best Award Certificate" class="certificate-img">
+                    <img src="assets/images/awward-3.jpg" alt="Best Award Certificate" class="certificate-img">
+                    <img src="assets/images/awward-1.jpg" alt="Best Award Certificate" class="certificate-img">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="section cta" aria-label="work with me">
+        <div class="container">
+            <h2 class="title h2 section-title text-center">Let's Work Together On Your Next Project!
+
+            </h2>
+
+        </div>
+    </section>
+
+    <section class="section portfolio" id="projects" aria-label="portfolio">
+        <div class="container">
+            <div class="slider-wrapper">
+                <button class="slider-btn prev-btn" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <ul class="slider-container" data-slider>
+
+                    <!-- Video Item 1 -->
+                    <li class="slider-item">
+                        <div class="portfolio-card video-card">
+                            <a href="https://www.facebook.com/share/v/1AQd9bAqzY/" target="_blank" class="video-link"
+                                aria-label="Watch Facebook Video">
+                                <figure class="card-banner img-holder" style="--width: 400; --height: 600;">
+                                    <img src="./assets/images/royal palace.jpeg" width="400" height="600" loading="lazy"
+                                        alt="Ad Shoot Preview" class="img-cover">
+                                    <div class="play-button">
+                                        <i class="far fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="h3 title">Hotel Ads Shoot</h3>
+                                <span class="category">Facebook Video Ad</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Website Item 1 -->
+                    <li class="slider-item">
+                        <div class="portfolio-card website-card">
+                            <figure class="card-banner img-holder" style="--width: 400; --height: 600;">
+                                <img src="./assets/images/homeglory.png" width="400" height="600" loading="lazy"
+                                    alt="Website Preview" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h3 title">E-commerce Platform</h3>
+                                <a href="https://homegloryappliances.com/" class="btn-link">
+                                    <span class="span">Visit Website</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Video Item 2 -->
+                    <li class="slider-item">
+                        <div class="portfolio-card video-card">
+                            <a href="https://www.instagram.com/reel/DKw7QfiBm58/?igsh=aGo5b2VpcXZsYzJs" target="_blank"
+                                class="video-link" aria-label="Watch Instagram Reel">
+                                <figure class="card-banner img-holder" style="--width: 400; --height: 600;">
+                                    <img src="./assets/images/de lounge.jpeg" width="400" height="600" loading="lazy"
+                                        alt="Ad Shoot Preview" class="img-cover">
+                                    <div class="play-button">
+                                        <i class="far fa-circle-play"></i>
+                                    </div>
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="h3 title">Restaurant Ad</h3>
+                                <span class="category">Instagram Reel</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Website Item 2 -->
+                    <li class="slider-item">
+                        <div class="portfolio-card website-card">
+                            <figure class="card-banner img-holder" style="--width: 400; --height: 600;">
+                                <img src="./assets/images/portfolio.png" width="400" height="600" loading="lazy"
+                                    alt="Website Preview" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h3 title">Corporate Portfolio</h3>
+                                <a href="https://manirajsharma.vercel.app/" class="btn-link">
+                                    <span class="span">Visit Website</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Website Item 3 -->
+                    <li class="slider-item">
+                        <div class="portfolio-card website-card">
+                            <figure class="card-banner img-holder" style="--width: 400; --height: 600;">
+                                <img src="./assets/images/project-1.jpg" width="400" height="600" loading="lazy"
+                                    alt="Website Preview" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h3 title">Creative & experienced digital design studio</h3>
+                                <a href="#" class="btn-link">
+                                    <span class="span">Visit Website</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Website Item 4 -->
+                    <li class="slider-item">
+                        <div class="portfolio-card website-card">
+                            <figure class="card-banner img-holder" style="--width: 400; --height: 600;">
+                                <img src="./assets/images/project-2.jpg" width="400" height="600" loading="lazy"
+                                    alt="Website Preview" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h3 title">Front End Development & Maintenance</h3>
+                                <a href="#" class="btn-link">
+                                    <span class="span">Visit Website</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Website Item 5 -->
+                    <li class="slider-item">
+                        <div class="portfolio-card website-card">
+                            <figure class="card-banner img-holder" style="--width: 400; --height: 600;">
+                                <img src="./assets/images/project-3.jpg" width="400" height="600" loading="lazy"
+                                    alt="Website Preview" class="img-cover">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h3 title">Flutter Framework & Warframe Design</h3>
+                                <a href="#" class="btn-link">
+                                    <span class="span">Visit Website</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <button class="slider-btn next-btn" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <section class="contact-section" id="contacts">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="container contact-grid">
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" class="form-input" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-wrapper">
+                <h3 class="contact-info-title">Let's talk about everything!</h3>
+                <p class="contact-info-text">
+                    Don't like forms? Send me an email. 👋
+                </p>
+
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+918925108274" class="contact-link">+91 89251 08274</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:manirajsharma193@gmail.com"
+                                class="contact-link">manirajsharma193@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-link">Trichy, Tamil Nadu</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <footer class="copyright">
+        <div class="container">
+            <p>&copy; 2026 manirajsharma.com.np. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
